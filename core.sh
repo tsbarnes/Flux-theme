@@ -16,7 +16,7 @@ fi
 
 SASSC_OPT="-M -t expanded"
 
-THEME_NAME=Orchis
+THEME_NAME=Flux
 THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
 COLOR_VARIANTS=('' '-Light' '-Dark')
 SIZE_VARIANTS=('' '-Compact')
@@ -272,7 +272,7 @@ install_mac() {
 }
 
 round_corner() {
-  sed -i "/\$default_corner:/s/12px/${corner}/" ${SRC_DIR}/_sass/_tweaks-temp.scss
+  sed -i "/\$default_corner:/s/2px/${corner}/" ${SRC_DIR}/_sass/_tweaks-temp.scss
 }
 
 install_submenu() {
